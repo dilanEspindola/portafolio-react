@@ -360,7 +360,7 @@ function Particulas() {
                 factor: 1000,
               },
               limit: 300,
-              value: 100,
+              value: 50,
             },
             opacity: {
               random: {

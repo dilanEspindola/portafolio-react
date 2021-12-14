@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import Particulas from "./Particulas";
+import SeccionInicio from "./SeccionInicio";
+import Footer from "../Footer";
 import "../style.css";
 
 function Inicio() {
@@ -15,6 +17,8 @@ function Inicio() {
         "...",
         "Redes sociales",
         "https://github.com/dilanEspindola",
+        "https://twitter.com/Darkgame55",
+        "https://www.facebook.com/dilanenrique.espindolagil.7",
       ],
       startDelay: 500,
       typeSpeed: 50,
@@ -35,10 +39,12 @@ function Inicio() {
       <section className="imagen-1">
         <span ref={el} className="texto-automatico"></span>
         <Particulas />
-        <a href="http://localhost:3000/contactame" className="contactame-btn">
-          Contactame
+        <a href="/contactame" className="contactame-btn">
+          Contáctame
         </a>
       </section>
+      <SeccionInicio />
+      <Footer />
     </>
   );
 }

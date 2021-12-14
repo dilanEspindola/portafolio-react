@@ -57,7 +57,7 @@ function App() {
             <Inicio />
           </Route>
         </Switch>
-      </Router>
+      </Router>      
     </>
   );
 }
