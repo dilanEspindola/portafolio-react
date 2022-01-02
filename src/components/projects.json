@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "talento Juventic",
+    "image":"https://res.cloudinary.com/dp9zv16le/image/upload/v1641101236/portafolio-web/proyecto1_f79u6m.png",
+    "description": "Este proyecto fue realizado en un programa o bootcamp de desarrollo, el cual está hecho con las siguientes tecnologias: ReactJs, Nodejs, C# y Mysql. El objetivo de este mismo era hacer una app web para un restuarante donde permite realizar un CRUD(crear, leer, actualiazar, eliminar). Además es un proyecto en el que trabajamos en grupo con otros compañeros",
+    "link": "https://reto-talento-juven-tic-react.vercel.app",
+    "githubLink": "https://github.com/dilanEspindola/Reto-Talento-JuvenTIC-React"
+  },
+  {
+    "id": 2,
+    "name": "talento Juventic",
+    "image":"https://res.cloudinary.com/dp9zv16le/image/upload/v1641101236/portafolio-web/proyecto1_f79u6m.png",
+    "description": "Este proyecto fue realizado en un programa o bootcamp de desarrollo, el cual está hecho con las siguientes tecnologias: ReactJs, Nodejs, C# y Mysql. El objetivo de este mismo era hacer una app web para un restuarante donde permite realizar un CRUD(crear, leer, actualiazar, eliminar).",
+    "link": "https://reto-talento-juven-tic-react.vercel.app",
+    "githubLink": "https://github.com/dilanEspindola/Reto-Talento-JuvenTIC-React"
+  },{
+    "id": 3,
+    "name": "talento Juventic",
+    "image":"https://res.cloudinary.com/dp9zv16le/image/upload/v1641101236/portafolio-web/proyecto1_f79u6m.png",
+    "description": "Este proyecto fue realizado en un programa o bootcamp de desarrollo, el cual está hecho con las siguientes tecnologias: ReactJs, Nodejs, C# y Mysql. El objetivo de este mismo era hacer una app web para un restuarante donde permite realizar un CRUD(crear, leer, actualiazar, eliminar).",
+    "link": "https://reto-talento-juven-tic-react.vercel.app",
+    "githubLink": "https://github.com/dilanEspindola/Reto-Talento-JuvenTIC-React"
+  },{
+    "id": 4,
+    "name": "talento Juventic",
+    "image":"https://res.cloudinary.com/dp9zv16le/image/upload/v1641101236/portafolio-web/proyecto1_f79u6m.png",
+    "description": "Este proyecto fue realizado en un programa o bootcamp de desarrollo, el cual está hecho con las siguientes tecnologias: ReactJs, Nodejs, C# y Mysql. El objetivo de este mismo era hacer una app web para un restuarante donde permite realizar un CRUD(crear, leer, actualiazar, eliminar).",
+    "link": "https://reto-talento-juven-tic-react.vercel.app",
+    "githubLink": "https://github.com/dilanEspindola/Reto-Talento-JuvenTIC-React"
+  }
+]

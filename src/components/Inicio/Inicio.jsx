@@ -26,7 +26,6 @@ function Inicio() {
       backDelay: 200,
       loop: true,
       showCursor: true,
-      cursorChar: "|",
     });
 
     return () => {

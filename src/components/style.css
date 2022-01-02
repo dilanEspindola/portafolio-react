@@ -20,6 +20,13 @@ h3 {
 p {
   font-size: 1rem; /* 16px */
 }
+img {
+  width: 100% !important;
+  transition: all ease-in-out 0.2s;
+}
+img:hover {
+  transform: scale(1.05);
+}
 /* fin Globales */
 
 header {
@@ -29,6 +36,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  max-width: 100%;
 }
 
 .scroll {
@@ -47,6 +55,7 @@ header .titulo-header {
   text-decoration: none;
   font-weight: 400;
   font-size: 2rem;
+  transition: all 0.9s ease-in !important;
 }
 
 nav {
@@ -75,21 +84,7 @@ nav {
 
 .imagen-1 {
   position: relative;
-  /*background-image: url("img/background.jpg");      */
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -121,14 +116,156 @@ nav {
   font-size: 1.5rem;
   align-items: center;
   box-sizing: border-box;
-  -webkit-box-shadow: 1px 0px 49px 13px rgba(9, 210, 224, 0.75);
-  -moz-box-shadow: 1px 0px 49px 13px rgba(9, 210, 224, 0.75);
-  box-shadow: 1px 0px 49px 13px rgba(9, 210, 224, 0.75);
+  -webkit-box-shadow: 1px 0px 27px 10px rgba(9, 210, 224, 0.75);
+  -moz-box-shadow: 1px 0px 27px 10px rgba(9, 210, 224, 0.75);
+  box-shadow: 1px 0px 27px 10px rgba(9, 210, 224, 0.75);
   transition: background 0.3s;
 }
 .contactame-btn:hover {
   background: #07a6b1c9;
 }
+
+/* SECCION PROYECTOS-HOME */
+.seccion-some-projects {
+  max-width: 100%;
+  width: 100%;
+  padding: 50px;
+  background: #23074d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #25022e,
+    #23074d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #25022e,
+    #23074d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.seccion-some-projects .contenedor-projects {
+}
+.seccion-some-projects .contenedor-projects h1 {
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.seccion-some-projects .contenedor-projects p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  word-spacing: 1px;
+  line-height: 170%;
+  color: rgb(201, 201, 201);
+}
+.seccion-some-projects .contenedor-projects .project-lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 0 100px;
+}
+.seccion-some-projects .contenedor-projects .project-lists .project {
+  color: #fff;
+  overflow: hidden;
+  padding-bottom: 20px;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.75);
+}
+.seccion-some-projects
+  .contenedor-projects
+  .project-lists
+  .project
+  .content-txt {
+  padding: 20px;
+}
+.seccion-some-projects
+  .contenedor-projects
+  .project-lists
+  .project
+  .content-txt
+  p {
+  color: rgba(255, 255, 255, 0.815);
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+.seccion-some-projects .contenedor-projects .project-lists .project .titulo {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.seccion-some-projects .contenedor-projects .project-lists .project .links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.seccion-some-projects .contenedor-projects .project-lists .project a.btn {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: #200122; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6f0000,
+    #200122
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6f0000,
+    #200122
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.seccion-some-projects
+  .contenedor-projects
+  .project-lists
+  .project
+  a.btn:hover {
+  background: #200122;
+}
+.btn-ver-mas {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.btn-ver-mas a.ver-mas {
+  color: rgb(233, 233, 233);
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.125rem;
+  border-radius: 3px;
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #5cb6ca,
+    #187b94
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #5cb6ca,
+    #187b94
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.btn-ver-mas a.ver-mas:hover {
+  background: #187b94;
+}
+/* FIN SECCION PROYECTOS-HOME */
 
 /* FOOTER */
 footer {
@@ -187,5 +324,4 @@ footer .contenido .twitter-icon:hover {
   padding: 15px;
   border-radius: 5px;
 }
-
 /* FIN FOOTER */

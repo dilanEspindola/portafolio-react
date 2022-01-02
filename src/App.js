@@ -18,7 +18,7 @@ function App() {
     });
   });
 
-  const condicional = window.scrollY > 50 ? scroll : null;
+  const condicional = window.scrollY > 80 ? scroll : null;
 
   return (
     <>

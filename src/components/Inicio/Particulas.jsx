@@ -3,10 +3,10 @@ import Particles from "react-tsparticles";
 
 function Particulas() {
   const particlesInit = (main) => {
-    console.log(main);
+    //console.log(main);
   };
   const particlesLoaded = (container) => {
-    console.log(container);
+    //console.log(container);
   };
 
   return (
