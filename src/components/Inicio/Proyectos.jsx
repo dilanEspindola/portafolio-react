@@ -8,7 +8,7 @@ function Proyectos(props) {
     <>
       {getTwoProjects.map((p) => (
         <div className="project" key={p.id}>
-          <img src={p.image} />
+          <img src={p.image} className="img-project" />
           <p className="titulo">{p.name}</p>
           <div className="content-txt">
             <p>{p.description}</p>

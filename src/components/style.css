@@ -20,13 +20,7 @@ h3 {
 p {
   font-size: 1rem; /* 16px */
 }
-img {
-  width: 100% !important;
-  transition: all ease-in-out 0.2s;
-}
-img:hover {
-  transform: scale(1.05);
-}
+
 /* fin Globales */
 
 header {
@@ -240,7 +234,7 @@ nav {
 .btn-ver-mas {
   display: flex;
   justify-content: center;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 .btn-ver-mas a.ver-mas {
   color: rgb(233, 233, 233);
@@ -264,6 +258,13 @@ nav {
 }
 .btn-ver-mas a.ver-mas:hover {
   background: #187b94;
+}
+img.img-project {
+  width: 100% !important;
+  transition: all ease-in-out 0.2s;
+}
+img.img-project:hover {
+  transform: scale(1.05);
 }
 /* FIN SECCION PROYECTOS-HOME */
 

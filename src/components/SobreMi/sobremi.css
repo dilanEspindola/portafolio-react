@@ -3,4 +3,35 @@
 }
 .pagina-sobremi .contenedor {
   padding: 120px 0;
+  border: 1px solid;
+}
+img.img-sobremi {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  margin: 0 auto;
+}
+
+h1.quien-soy-txt {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.contenedor-txt-img {
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.contenedor-txt-img p {
+  color: rgba(255, 255, 255, 0.801);
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: 200;
+}
+.contenedor-txt-img p a {
+  color: rgba(197, 194, 212, 0.596);
 }
