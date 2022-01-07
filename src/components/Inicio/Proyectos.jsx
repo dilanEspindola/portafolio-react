@@ -27,7 +27,7 @@ function Proyectos(props) {
               href={p.githubLink}
               rel="noopener noreferrer"
             >
-              Ver en GitHub
+              Ver Codigo en GitHub
             </a>
           </div>
         </div>
