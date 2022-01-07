@@ -15,6 +15,7 @@ export default function Footer() {
                 href="https://github.com/dilanEspindola"
                 className=""
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <i className="fab fa-github github-icon"></i>
               </a>
@@ -27,6 +28,7 @@ export default function Footer() {
                 href="https://www.facebook.com/dilanenrique.espindolagil.7"
                 className=""
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <i className="fab fa-facebook-f faceboook-icon"></i>
               </a>
@@ -35,7 +37,11 @@ export default function Footer() {
           </div>
           <div className="twitter">
             <span>
-              <a href="https://twitter.com/Darkgame55" target="_blank">
+              <a
+                href="https://twitter.com/Darkgame55"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-twitter twitter-icon"></i>
               </a>
             </span>

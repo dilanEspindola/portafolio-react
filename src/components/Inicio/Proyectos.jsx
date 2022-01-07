@@ -14,10 +14,19 @@ function Proyectos(props) {
             <p>{p.description}</p>
           </div>
           <div className="links">
-            <a className="btn" href={p.link} target="_blank">
+            <a
+              className="btn"
+              href={p.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               visitar página
             </a>
-            <a className="btn btn-github" href={p.githubLink} target="_blank">
+            <a
+              className="btn btn-github"
+              href={p.githubLink}
+              rel="noopener noreferrer"
+            >
               Ver en GitHub
             </a>
           </div>

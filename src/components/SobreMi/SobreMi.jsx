@@ -40,12 +40,17 @@ function SobreMi() {
               <a
                 href="https://www.sena.edu.co/es-co/sena/Paginas/quienesSomos.aspx"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Sena{" "}
               </a>
               que constó de un año de formacion y que actualmente poseo un
               certificado. Y no hace mucho que fuí admitido en estudiar en{" "}
-              <a href="https://talento.juventic.co" target="_blank">
+              <a
+                href="https://talento.juventic.co"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Talento Juventic
               </a>{" "}
               que para resumirlo es un bootcamp de 3 meses de formación en donde
