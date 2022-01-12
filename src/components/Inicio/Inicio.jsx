@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import Particulas from "./Particulas";
 import SeccionInicio from "./SeccionInicio";
 import Footer from "../Footer";
 import "../style.css";
@@ -33,7 +32,6 @@ function Inicio() {
     <>
       <section className="imagen-1">
         <span ref={el} className="texto-automatico"></span>
-        <Particulas />
         <a href="/contactame" className="contactame-btn">
           Contáctame
         </a>
