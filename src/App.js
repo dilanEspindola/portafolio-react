@@ -6,6 +6,8 @@ import {
   NavLink,
   Link,
 } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
+
 import "./components/style.css";
 
 import Inicio from "./components/Inicio/Inicio";
@@ -18,6 +20,8 @@ function App() {
   let classIconBar = "icon-bar";
   let hideIconBar = "hide";
   let classIconBarClose = "icon-bar-close";
+
+  const isTabletMid = useMediaQuery({ query: "(max-width: 690px)" });
 
   const [scroll, setScroll] = useState(0);
   const [stateOpen, setStateOpen] = useState(true);
@@ -35,87 +39,154 @@ function App() {
     });
   });
 
-  return (
-    <>
-      <Router>
-        <header
-          className={condicional ? classScroll : null}
-          style={
-            stateOpen === false
-              ? { marginLeft: 410 }
-              : stateClose === false || stateClose === true
-              ? { marginLeft: 0 }
-              : null
-          }
-        >
-          <span className="icon-bar" style={{ marginLeft: 400 }}>
-            <i className="fas fa-bars"></i>
-          </span>
-          <span className={classIconBarClose}>
-            <i className="fas fa-times"></i>
-          </span>
-          <nav>
-            <div className="container-titulo-header">
-              <Link to="/" className="titulo-header">
-                portafolio web
-              </Link>
-            </div>
-            <div className="container-nav-header">
-              <ul className="nav-header">
-                <NavLink
-                  exact
-                  to="/"
-                  className="a-nav"
-                  activeClassName="active"
-                >
-                  inicio
-                </NavLink>
-                <NavLink
-                  exact
-                  to="/sobre-mi"
-                  className="a-nav"
-                  activeClassName="active"
-                >
-                  sobre mí
-                </NavLink>
-                <NavLink
-                  exact
-                  to="/mis-proyectos"
-                  className="a-nav"
-                  activeClassName="active"
-                >
-                  mis proyectos
-                </NavLink>
-                <NavLink
-                  exact
-                  to="/contactame"
-                  className="a-nav"
-                  activeClassName="active"
-                >
-                  contactame
-                </NavLink>
-              </ul>
-            </div>
-          </nav>
-        </header>
-
-        <Switch>
-          <Route path="/sobre-mi">
-            <SobreMi />
-          </Route>
-          <Route path="/mis-proyectos">
-            <MisProyectos />
-          </Route>
-          <Route path="/contactame">
-            <Contactame />
-          </Route>
-          <Route path="/">
-            <Inicio />
-          </Route>
-        </Switch>
-      </Router>
-    </>
-  );
+  if (isTabletMid) {
+    return (
+      <>
+        <Router>
+          <header
+            className={condicional ? classScroll : null}
+            style={
+              stateOpen === false
+                ? { marginLeft: 410, isTabletMid }
+                : stateClose === false || stateClose === true
+                ? { marginLeft: 0, isTabletMid }
+                : null
+            }
+          >
+            <span className="icon-bar" style={{ marginLeft: 400 }}>
+              <i className="fas fa-bars"></i>
+            </span>
+            <span className={classIconBarClose}>
+              <i className="fas fa-times"></i>
+            </span>
+            <nav>
+              <div className="container-titulo-header">
+                <Link to="/" className="titulo-header">
+                  portafolio web
+                </Link>
+              </div>
+              <div className="container-nav-header">
+                <ul className="nav-header">
+                  <NavLink
+                    exact
+                    to="/"
+                    className="a-nav"
+                    activeClassName="active"
+                  >
+                    inicio
+                  </NavLink>
+                  <NavLink
+                    exact
+                    to="/sobre-mi"
+                    className="a-nav"
+                    activeClassName="active"
+                  >
+                    sobre mí
+                  </NavLink>
+                  <NavLink
+                    exact
+                    to="/mis-proyectos"
+                    className="a-nav"
+                    activeClassName="active"
+                  >
+                    mis proyectos
+                  </NavLink>
+                  <NavLink
+                    exact
+                    to="/contactame"
+                    className="a-nav"
+                    activeClassName="active"
+                  >
+                    contactame
+                  </NavLink>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          <Switch>
+            <Route path="/sobre-mi">
+              <SobreMi />
+            </Route>
+            <Route path="/mis-proyectos">
+              <MisProyectos />
+            </Route>
+            <Route path="/contactame">
+              <Contactame />
+            </Route>
+            <Route path="/">
+              <Inicio />
+            </Route>
+          </Switch>
+        </Router>
+      </>
+    );
+  } else {
+    return (
+      <>
+        <Router>
+          <header className={condicional ? classScroll : null}>
+            <nav>
+              <div className="container-titulo-header">
+                <Link to="/" className="titulo-header">
+                  portafolio web
+                </Link>
+              </div>
+              <div className="container-nav-header">
+                <ul className="nav-header">
+                  <NavLink
+                    exact
+                    to="/"
+                    className="a-nav"
+                    activeClassName="active"
+                  >
+                    inicio
+                  </NavLink>
+                  <NavLink
+                    exact
+                    to="/sobre-mi"
+                    className="a-nav"
+                    activeClassName="active"
+                  >
+                    sobre mí
+                  </NavLink>
+                  <NavLink
+                    exact
+                    to="/mis-proyectos"
+                    className="a-nav"
+                    activeClassName="active"
+                  >
+                    mis proyectos
+                  </NavLink>
+                  <NavLink
+                    exact
+                    to="/contactame"
+                    className="a-nav"
+                    activeClassName="active"
+                  >
+                    contactame
+                  </NavLink>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          <Switch>
+            <Route path="/sobre-mi">
+              <SobreMi />
+            </Route>
+            <Route path="/mis-proyectos">
+              <MisProyectos />
+            </Route>
+            <Route path="/contactame">
+              <Contactame />
+            </Route>
+            <Route path="/">
+              <Inicio />
+            </Route>
+          </Switch>
+        </Router>
+      </>
+    );
+  }
 }
 
 export default App;
