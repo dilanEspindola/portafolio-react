@@ -12,13 +12,9 @@ function Inicio() {
     const typed = new Typed(el.current, {
       strings: [
         "Bienvenido a mi portafolio web.",
-        "Mi nombre es Dilan Espindola.",
+        "Mi nombre es Dilan Enrique Espindola Gil.",
         "Aquí puedes algunos proyectos web hechos por mí.",
         "...",
-        "Redes sociales",
-        "https://github.com/dilanEspindola",
-        "https://twitter.com/Darkgame55",
-        "https://www.facebook.com/dilanenrique.espindolagil.7",
       ],
       startDelay: 500,
       typeSpeed: 50,
