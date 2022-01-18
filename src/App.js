@@ -65,36 +65,22 @@ function App() {
             </span>
             <nav>
               <div className="container-titulo-header">
-                <Link link="/" className="titulo-header">
+                <a href="/" className="titulo-header">
                   portafolio web
-                </Link>
+                </a>
               </div>
               <div className="container-nav-header">
                 <ul className="nav-header">
-                  <a href="/" className="a-nav" activeClassName="active">
+                  <a href="/" className="a-nav">
                     inicio
                   </a>
-                  <a
-                    href="/sobre-mi"
-                    className="a-nav"
-                    activeClassName="active"
-                  >
+                  <a href="/sobre-mi" className="a-nav">
                     sobre mí
                   </a>
-                  <a
-                    exact
-                    to="/mis-proyectos"
-                    className="a-nav"
-                    activeClassName="active"
-                  >
+                  <a href="/mis-proyectos" className="a-nav">
                     mis proyectos
                   </a>
-                  <a
-                    exact
-                    to="/contactame"
-                    className="a-nav"
-                    activeClassName="active"
-                  >
+                  <a href="/contactame" className="a-nav">
                     contactame
                   </a>
                 </ul>
