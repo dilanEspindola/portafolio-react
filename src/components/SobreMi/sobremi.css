@@ -35,3 +35,10 @@ h1.quien-soy-txt {
 .contenedor-txt-img p a {
   color: rgba(197, 194, 212, 0.596);
 }
+
+@media (max-width: 690px) {
+  .contenedor-txt-img {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

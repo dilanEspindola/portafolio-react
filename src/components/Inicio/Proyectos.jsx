@@ -1,12 +1,11 @@
 import React from "react";
 
-function Proyectos(props) {
+const Proyectos = (props) => {
   const { projectLists } = props;
-  const getTwoProjects = projectLists.filter((p) => p.id <= 2);
-
+  const getTwo = projectLists.filter((p) => p.id <= 2);
   return (
     <>
-      {getTwoProjects.map((p) => (
+      {getTwo.map((p) => (
         <div className="project" key={p.id}>
           <img src={p.image} className="img-project" />
           <p className="titulo">{p.name}</p>
@@ -25,6 +24,7 @@ function Proyectos(props) {
             <a
               className="btn btn-github"
               href={p.githubLink}
+              target="_blank"
               rel="noopener noreferrer"
             >
               Ver Codigo en GitHub
@@ -34,6 +34,6 @@ function Proyectos(props) {
       ))}
     </>
   );
-}
+};
 
 export default Proyectos;

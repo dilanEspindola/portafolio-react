@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Typed from "typed.js";
-import SeccionInicio from "./SeccionInicio";
+
 import Footer from "../Footer";
-import "../style.css";
+import SeccionInicio from "./SeccionInicio";
+import "./inicio.css";
 
 function Inicio() {
   const el = useRef(null);
@@ -20,7 +21,7 @@ function Inicio() {
       backSpeed: 20,
       backDelay: 200,
       loop: true,
-      showCursor: true,
+      showCursor: false,
     });
 
     return () => {
@@ -30,12 +31,14 @@ function Inicio() {
 
   return (
     <>
-      <section className="imagen-1">
+      <div className="inicio">
         <span ref={el} className="texto-automatico"></span>
-        <a href="/contactame" className="contactame-btn">
-          Contáctame
-        </a>
-      </section>
+        <div className="container-contactame">
+          <a href="/contactame" className="contactame-btn">
+            Contáctame
+          </a>
+        </div>
+      </div>
       <SeccionInicio />
       <Footer />
     </>

@@ -1,7 +1,6 @@
 import React from "react";
-import proyectos from "../projects.json";
 import Proyectos from "./Proyectos";
-import "../style.css";
+import proyectos from "../projects.json";
 
 function SeccionInicio() {
   return (
@@ -28,5 +27,4 @@ function SeccionInicio() {
     </>
   );
 }
-
 export default SeccionInicio;

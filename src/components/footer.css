@@ -1,0 +1,56 @@
+footer {
+  background-color: #000;
+  padding: 50px;
+}
+footer .contenido {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+footer .contenido .nombre {
+  font-weight: 700;
+  text-transform: capitalize;
+  word-spacing: 5px;
+}
+footer .contenido .linea-vertical {
+  width: 1px;
+  height: 70px;
+  background: #fff;
+}
+footer .contenido .redes-sociales {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  text-align: center;
+}
+
+footer .contenido i {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+footer .contenido .github-icon {
+  transition: all ease-in-out 0.3s;
+}
+footer .contenido .github-icon:hover {
+  background-color: rgb(36, 36, 36);
+  padding: 15px;
+  border-radius: 5px;
+}
+footer .contenido .faceboook-icon {
+  transition: all ease-in-out 0.3s;
+}
+footer .contenido .faceboook-icon:hover {
+  background-color: #3b5998;
+  padding: 15px;
+  border-radius: 5px;
+}
+footer .contenido .twitter-icon {
+  transition: all ease-in-out 0.3s;
+}
+footer .contenido .twitter-icon:hover {
+  background-color: #55acee;
+  padding: 15px;
+  border-radius: 5px;
+}

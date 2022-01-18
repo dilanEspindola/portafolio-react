@@ -1,8 +1,8 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {} from "@fortawesome/free-solid-svg-icons";
 
-export default function Footer() {
+import "./footer.css";
+
+function Footer() {
   return (
     <footer>
       <div className="contenido">
@@ -52,3 +52,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;
