@@ -1,10 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 import Footer from "../Footer";
 import Particulas from "./Particulas";
 import "./contactame.css";
 
 function Contactame() {
+  const [data, setDatos] = useState([]);
+  const [dato, setData] = useState({
+    email: "",
+    message: "",
+  });
+
+  const handleInput = (e) => {
+    setData({
+      ...dato,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const sendData = async () => {
+    await axios
+      .post("http://localhost:4000/", { dato })
+      .then((response) => {
+        setData(data.concat(response.data));
+      })
+      .catch((error) => console.log(error));
+  };
+
   return (
     <div className="pagina-contactame">
       <div className="contenedor-contactame">
@@ -19,32 +42,32 @@ function Contactame() {
                 href="https://www.linkedin.com/in/dilan-espindola-09b6b51a9/"
                 target="_blank"
               >
-                <i class="fab fa-linkedin-in"></i>
+                <i className="fab fa-linkedin-in"></i>
               </a>
               <p>LinkedIn</p>
             </span>
             <span className="instagram iconos">
               <a href="https://www.instagram.com/noiisys/" target="_blank">
-                <i class="fab fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
               </a>
               <p>Instagram</p>
             </span>
             <span className="git-hub iconos">
               <a href="https://github.com/dilanEspindola" target="_blank">
-                <i class="fab fa-github"></i>
+                <i className="fab fa-github"></i>
               </a>
               <p>GitHub</p>
             </span>
             <span className="whatsapp iconos">
               <div className="icono-numero">
-                <i class="fab fa-whatsapp"></i>
+                <i className="fab fa-whatsapp"></i>
                 <p>+573144530377</p>
               </div>
               <p>WhatsApp</p>
             </span>
             <span className="email iconos">
               <div className="icono-email">
-                <i class="far fa-envelope"></i>
+                <i className="far fa-envelope"></i>
                 <p>dilanespindola29@gmail.com</p>
               </div>
               <p>Correo</p>
@@ -56,14 +79,27 @@ function Contactame() {
 
         <div className="contenedor-formulario">
           <p>Escribe tu correo y un mensaje</p>
-          <form action="" method="POST" onSubmit="">
-            <input type="email" placeholder="Email" />
+          <form
+            action="http://localhost:4000/"
+            method="POST"
+            onSubmit={sendData}
+          >
+            <input
+              type="email"
+              placeholder="Email"
+              onChange={handleInput}
+              name="email"
+              required
+            />
             <textarea
               name=""
               id=""
               cols="30"
               rows="10"
               placeholder="Mensaje"
+              onChange={handleInput}
+              name="message"
+              required
             ></textarea>
             <button>Enviar</button>
           </form>
