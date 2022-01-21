@@ -25,18 +25,18 @@ function SobreMi() {
               <br />
               Como verás en la seccion de{" "}
               <a href="/mis-proyectos">mis proyectos</a> mi fuerte es el
-              desarollo web. Se usar varias tecngologias como
+              desarollo web. Se usar varias tecnologías como
               <b> Html, Css, javaScript, ReactJs, NodeJs, Mysql y Github</b>, en
               los proyectos (que por cierto son personales debido a que no tengo
               experencia laboral en esta area) qué verás estan hechos con las
-              tecngologias mencionadas previamente y por supuesto seguiré
-              aprendiendo mas tecngologias.
+              tecnologías mencionadas previamente y por supuesto seguiré
+              aprendiendo mas tecnologías.
               <br />
               Dejando un poco de la lado en lo me destaco, hablaré un poco sobre
               como a sido mi ruta de aprendizaje.
               <br />
               Antes de ingresar a estudiar en algun instituto, universidad,
-              bootcamp, etc... aprendo de manera autdidacta o automa. He
+              bootcamp, etc... aprendo de manera autodidacta o automa. He
               estudiado programación en el{" "}
               <a
                 href="https://www.sena.edu.co/es-co/sena/Paginas/quienesSomos.aspx"
@@ -45,7 +45,7 @@ function SobreMi() {
               >
                 Sena{" "}
               </a>
-              que constó de un año de formacion y que actualmente poseo un
+              que constó de un año de formación y que actualmente poseo un
               certificado. Y no hace mucho que fuí admitido en estudiar en{" "}
               <a
                 href="https://talento.juventic.co"
