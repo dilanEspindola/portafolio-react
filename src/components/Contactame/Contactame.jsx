@@ -1,6 +1,7 @@
 import React from "react";
 
 import Footer from "../Footer";
+import Particulas from "./Particulas";
 import "./contactame.css";
 
 function Contactame() {
@@ -41,9 +42,34 @@ function Contactame() {
               </div>
               <p>WhatsApp</p>
             </span>
+            <span className="email iconos">
+              <div className="icono-email">
+                <i class="far fa-envelope"></i>
+                <p>dilanespindola29@gmail.com</p>
+              </div>
+              <p>Correo</p>
+            </span>
           </div>
         </div>
+
+        <h3>Ó puedes envíarme un mensaje en el siguiente formulario:</h3>
+
+        <div className="contenedor-formulario">
+          <p>Escribe tu correo y un mensaje</p>
+          <form action="" method="POST" onSubmit="">
+            <input type="email" placeholder="Email" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>Enviar</button>
+          </form>
+        </div>
       </div>
+      <Particulas />
       <Footer />
     </div>
   );

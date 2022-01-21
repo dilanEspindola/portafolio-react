@@ -54,3 +54,23 @@ footer .contenido .twitter-icon:hover {
   padding: 15px;
   border-radius: 5px;
 }
+
+@media (max-width: 690px) {
+  footer .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  footer .contenido .linea-vertical {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  footer .contenido .redes-sociales {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

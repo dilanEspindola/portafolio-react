@@ -3,6 +3,7 @@ import Typed from "typed.js";
 
 import Footer from "../Footer";
 import SeccionInicio from "./SeccionInicio";
+import Particulas from "../Contactame/Particulas";
 import "./inicio.css";
 
 function Inicio() {
@@ -41,6 +42,7 @@ function Inicio() {
       </div>
       <SeccionInicio />
       <Footer />
+      <Particulas />
     </>
   );
 }

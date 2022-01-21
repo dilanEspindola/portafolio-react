@@ -1,6 +1,6 @@
 .contenedor-contactame {
   padding: 40px;
-  background-color: rgb(44, 5, 59);
+  background-color: rgba(0, 0, 0, 0.904);
 }
 
 .titulo-contactame {
@@ -13,13 +13,15 @@
 
 .flex {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 p.info-contacto {
   color: rgba(255, 255, 255, 0.705);
-  font-size: 18px;
+  font-size: 1.375rem;
   word-spacing: 2px;
 }
 
@@ -28,8 +30,9 @@ p.info-contacto {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
-  border: 1px solid #fff;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 60%;
   border-radius: 10px;
   padding: 20px;
 }
@@ -55,7 +58,8 @@ p.info-contacto {
   /*color: #f09433;*/
 }
 
-.whatsapp .icono-numero {
+.whatsapp .icono-numero,
+.email .icono-email {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -63,7 +67,92 @@ p.info-contacto {
 .whatsapp i {
   color: #4dc247;
 }
+.email i {
+  color: rgba(255, 255, 255, 0.692);
+}
 
+.contenedor-formulario {
+  border: 1px solid #fff;
+  width: 35%;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.contenedor-formulario p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+}
+
+.contenedor-formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input {
+  padding: 10px;
+  font: 1.25rem;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  transition: all ease-in-out 0.4s;
+}
+
+form input:focus {
+  border-bottom: 1.5px solid #fff;
+  transform: scale(0.96);
+}
+
+form textarea {
+  background: none;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px;
+  transition: all ease-in-out 0.4s;
+}
+
+form textarea:focus {
+  border: 1px solid #fff;
+  transform: scale(0.96);
+}
+
+form button {
+  cursor: pointer;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 1.125rem;
+  border: none;
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #5cb6ca,
+    #187b94
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #5cb6ca,
+    #187b94
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+form button:hover {
+  background: #187b94;
+}
+
+.contenedor-contactame h3 {
+  color: rgba(255, 255, 255, 0.74);
+  margin-top: 50px;
+  font-weight: 200;
+}
+
+/* RESPONSIVE*/
 @media (max-width: 850px) {
   .flex {
     flex-direction: column;
@@ -72,6 +161,12 @@ p.info-contacto {
 
   .redes-sociales-contactame {
     width: 100%;
+  }
+}
+
+@media (max-width: 790px) {
+  .contenedor-formulario {
+    width: 50%;
   }
 }
 
@@ -84,5 +179,13 @@ p.info-contacto {
     width: 80%;
     flex-direction: column;
     gap: 30px;
+  }
+
+  .contenedor-formulario {
+    width: 70%;
+  }
+
+  .contenedor-formulario p {
+    text-align: center;
   }
 }
