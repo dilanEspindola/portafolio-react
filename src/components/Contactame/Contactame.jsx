@@ -21,7 +21,7 @@ function Contactame() {
 
   const sendData = async () => {
     await axios
-      .post("http://localhost:4000/", { dato })
+      .post("https://backend-portafolioweb.herokuapp.com/", { dato })
       .then((response) => {
         setData(data.concat(response.data));
       })
@@ -80,7 +80,7 @@ function Contactame() {
         <div className="contenedor-formulario">
           <p>Escribe tu correo y un mensaje</p>
           <form
-            action="http://localhost:4000/"
+            action="https://backend-portafolioweb.herokuapp.com/"
             method="POST"
             onSubmit={sendData}
           >
