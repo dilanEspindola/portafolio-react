@@ -1,85 +1,88 @@
-.contactame {
-  background-color: rgb(50, 5, 77);
-  height: 100%;
-}
 .contenedor-contactame {
-  padding: 100px 50px;
+  padding: 40px;
+  background-color: rgb(44, 5, 59);
 }
-.contenedor-contactame h1 {
-  text-align: center;
-  font-weight: 400;
+
+.titulo-contactame {
   color: #fff;
+  font-weight: 500;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
 }
-.contenedor-form {
+
+.flex {
   display: flex;
-  justify-content: center;
-  border: 1px solid;
-  border-radius: 5px;
-  background: #000;
-  width: 50%;
-  margin: 50px auto;
+  justify-content: space-around;
+  align-items: center;
 }
-.contenedor-form .form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 20px;
+
+p.info-contacto {
+  color: rgba(255, 255, 255, 0.705);
+  font-size: 18px;
+  word-spacing: 2px;
 }
-.contenedor-form .form .inputs {
+
+.redes-sociales-contactame {
+  color: #fff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
 }
-.contenedor-form .form input {
-  font-size: 18px;
+
+.redes-sociales-contactame .iconos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.redes-sociales-contactame i {
+  font-size: 2.5rem;
   color: #fff;
-  width: 45%;
-  margin-bottom: 20px;
-  padding: 15px 5px;
-  border: none;
-  outline: none;
-  background: none;
-  border-bottom: 1px solid #fff;
-  transition: all ease-in-out 0.4s;
 }
-.contenedor-form .form input:focus {
-  transform: scale(0.95);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.699);
+
+.redes-sociales-contactame .linkedin i {
+  color: #007bb5;
 }
-.contenedor-form .form textarea {
-  width: 100%;
-  max-height: 200px;
-  background: none;
-  color: #fff;
-  margin-bottom: 20px;
-  padding: 15px 5px;
-  font-size: 18px;
-  transition: all ease-in-out 0.4s;
+
+.redes-sociales-contactame .instagram i {
+  color: rgb(131, 58, 180);
+  /*color: #f09433;*/
 }
-.contenedor-form .form textarea:focus {
-  transform: scale(0.97);
+
+.whatsapp .icono-numero {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-button.enviar {
-  width: 25%;
-  padding: 15px 0;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 18px;
-  background: #0f2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.whatsapp i {
+  color: #4dc247;
 }
-button.enviar:hover {
-  background-color: #0f2027;
+
+@media (max-width: 850px) {
+  .flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .redes-sociales-contactame {
+    width: 100%;
+  }
+}
+
+@media (max-width: 690px) {
+  .contenedor-contactame {
+    padding: 100px 0;
+  }
+
+  .redes-sociales-contactame {
+    width: 80%;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
