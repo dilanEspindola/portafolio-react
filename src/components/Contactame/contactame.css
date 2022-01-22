@@ -146,6 +146,35 @@ form button:hover {
   background: #187b94;
 }
 
+.contenedor-descarga {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-descargar {
+  width: 20%;
+  border: none;
+  background: #134e5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #71b280,
+    #134e5e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #71b280,
+    #134e5e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  cursor: pointer;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 1.25rem;
+}
+.btn-descargar i {
+  margin: 0 20px;
+}
+
 .contenedor-contactame h3 {
   color: rgba(255, 255, 255, 0.74);
   margin-top: 50px;
@@ -153,6 +182,12 @@ form button:hover {
 }
 
 /* RESPONSIVE*/
+@media (max-width: 1064px) {
+  .btn-descargar {
+    width: 40%;
+  }
+}
+
 @media (max-width: 850px) {
   .flex {
     flex-direction: column;
@@ -187,5 +222,11 @@ form button:hover {
 
   .contenedor-formulario p {
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-descargar {
+    width: 80%;
   }
 }

@@ -28,6 +28,12 @@ function Contactame() {
       .catch((error) => console.log(error));
   };
 
+  const descargar = () => {
+    window.open(
+      "https://drive.google.com/file/d/1B9YTc16MSWTUkUrqqpToGE-ztFJY4oIO/view"
+    );
+  };
+
   return (
     <div className="pagina-contactame">
       <div className="contenedor-contactame">
@@ -73,6 +79,13 @@ function Contactame() {
               <p>Correo</p>
             </span>
           </div>
+        </div>
+
+        <div className="contenedor-descarga">
+          <button className="btn-descargar" type="submit" onClick={descargar}>
+            <i className="fa-download"></i>
+            Descargar CV
+          </button>
         </div>
 
         <h3>Ó puedes envíarme un mensaje en el siguiente formulario:</h3>
