@@ -25,27 +25,27 @@ function Footer() {
           <div className="facebook">
             <span className="">
               <a
-                href="https://www.facebook.com/dilanenrique.espindolagil.7"
+                href="https://www.linkedin.com/in/dilan-espindola-09b6b51a9/"
                 className=""
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-facebook-f faceboook-icon"></i>
+                <i className="fab fa-linkedin-in linkedin-icon"></i>
               </a>
             </span>
-            <p>Facebook</p>
+            <p>LinkedIn</p>
           </div>
           <div className="twitter">
             <span>
               <a
-                href="https://twitter.com/Darkgame55"
+                href="https://www.instagram.com/noiisys/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-twitter twitter-icon"></i>
+                <i className="fab fa-instagram instagram-icon"></i>
               </a>
             </span>
-            <p>Twitter</p>
+            <p>Instagram</p>
           </div>
         </div>
       </div>

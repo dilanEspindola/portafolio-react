@@ -6,5 +6,21 @@
     "description": "Este proyecto fue realizado en un programa o bootcamp de desarrollo, el cual está hecho con las siguientes tecnologias: ReactJs, Nodejs, C# y Mysql. El objetivo de este mismo era hacer una app web para un restuarante donde permite realizar un CRUD(crear, leer, actualiazar, eliminar). Además es un proyecto en el que trabajamos en grupo con otros compañeros",
     "link": "https://reto-talento-juven-tic-react.vercel.app",
     "githubLink": "https://github.com/dilanEspindola/Reto-Talento-JuvenTIC-React"
+  },
+  {
+    "id": 2,
+    "name": "time tracking dashboard",
+    "image":"https://res.cloudinary.com/dp9zv16le/image/upload/v1643075360/portafolio-web/Captura_de_pantalla_844_l7lzd2.png",
+    "description": "Este pequeño proyecto fue hecho con ReactJs, y es una aplicación web que muestra cierta informacion de una persona que los datos se traen desde una base de datos, pero en este caso se empleo un archivo JSON para dicho proposito",
+    "link": "https://dilanespindola.github.io/time-tracking-dashboard-/",
+    "githubLink": "https://github.com/dilanEspindola/time-tracking-dashboard-"
+  },
+  {
+    "id": 3,
+    "name": "pagina de tareas",
+    "image":"https://res.cloudinary.com/dp9zv16le/image/upload/v1643077446/portafolio-web/Captura_de_pantalla_846_zzkukt.png",
+    "description": "Este proyecto fue hecho con html, css y javascript, y es basicamente una pagina de tareas en donde agregas un titulo y una descripción",
+    "link": "https://kind-kalam-85786c.netlify.app/",
+    "githubLink": "https://github.com/dilanEspindola/app-tasksjs"
   }
 ]

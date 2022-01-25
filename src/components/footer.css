@@ -35,23 +35,34 @@ footer .contenido .github-icon {
 }
 footer .contenido .github-icon:hover {
   background-color: rgb(36, 36, 36);
-  padding: 15px;
+  padding: 10px;
   border-radius: 5px;
 }
-footer .contenido .faceboook-icon {
+footer .contenido .linkedin-icon {
   transition: all ease-in-out 0.3s;
 }
-footer .contenido .faceboook-icon:hover {
+footer .contenido .linkedin-icon:hover {
   background-color: #3b5998;
-  padding: 15px;
+  padding: 10px;
   border-radius: 5px;
 }
-footer .contenido .twitter-icon {
+footer .contenido .instagram-icon {
   transition: all ease-in-out 0.3s;
 }
-footer .contenido .twitter-icon:hover {
-  background-color: #55acee;
-  padding: 15px;
+footer .contenido .instagram-icon:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* change this to change the size*/
   border-radius: 5px;
 }
 
