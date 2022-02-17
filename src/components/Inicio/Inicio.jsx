@@ -3,7 +3,7 @@ import Typed from "typed.js";
 
 import Footer from "../Footer";
 import SeccionInicio from "./SeccionInicio";
-import Particulas from "../Contactame/Particulas";
+import Particulas from "../Particulas";
 import "./inicio.css";
 
 function Inicio() {

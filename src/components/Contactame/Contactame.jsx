@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import Footer from "../Footer";
-import Particulas from "./Particulas";
+import Particulas from "../Particulas";
 import "./contactame.css";
 
 function Contactame() {
