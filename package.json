@@ -24,6 +24,7 @@
     "react-responsive": "^9.0.0-beta.5",
     "react-router-dom": "5.2.0",
     "react-scripts": "4.0.3",
+    "react-scroll-parallax": "^3.0.3",
     "react-tsparticles": "^1.37.5",
     "styled-components": "^5.3.3",
     "tsparticles": "^1.37.5",

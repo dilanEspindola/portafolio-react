@@ -1,10 +1,16 @@
 import { Parallax } from "react-parallax";
+import { useParallax } from "react-scroll-parallax";
 import CollisionsParticles from "../CollisionsParticles";
 import Footer from "../Footer";
 import imagen from "../../img/background2.jpg";
 import "./sobremi.css";
 
 function SobreMi() {
+  const { ref } = useParallax({
+    translateY: [0, -50],
+    speed: 5,
+  });
+
   return (
     <>
       <Parallax bgImage={imagen} strength={500} className="img-parallax">
@@ -16,7 +22,7 @@ function SobreMi() {
                 <h1 className="quien-soy-txt" id="quien-soy-id">
                   quién soy?
                 </h1>
-                <p id="p-id">
+                <p ref={ref}>
                   Mi nombre es Dilan Enrique Espindola Gil, actualmente tengo 20
                   años y resido en Bogotá, Colombia
                   <br />
@@ -65,7 +71,7 @@ function SobreMi() {
                 </p>
               </div>
 
-              <div className="card-skills">
+              <div className="card-skills" ref={ref}>
                 <h1>Mis Habilidades</h1>
                 <div className="skills">
                   <span>

@@ -63,7 +63,7 @@ const Particulas = () => {
                 duration: 0.4,
                 easing: "ease-out-quad",
                 factor: 1,
-                maxSpeed: 50,
+                maxSpeed: 30,
                 speed: 1,
               },
               bounce: {
@@ -71,7 +71,7 @@ const Particulas = () => {
               },
               bubble: {
                 distance: 200,
-                duration: 0.4,
+                duration: 0.8,
                 mix: false,
               },
               connect: {
@@ -118,7 +118,7 @@ const Particulas = () => {
               },
               repulse: {
                 distance: 200,
-                duration: 0.4,
+                duration: 0.8,
                 factor: 100,
                 speed: 1,
                 maxSpeed: 50,
@@ -343,8 +343,8 @@ const Particulas = () => {
             number: {
               density: {
                 enable: true,
-                area: 800,
-                factor: 1000,
+                area: 1000,
+                factor: 1500,
               },
               limit: 0,
               value: 80,

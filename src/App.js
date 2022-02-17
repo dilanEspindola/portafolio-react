@@ -6,8 +6,8 @@ import {
   Link,
 } from "react-router-dom";
 import { useState, useEffect } from "react";
-
 import { useMediaQuery } from "react-responsive";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 import Inicio from "./components/Inicio/Inicio";
 import SobreMi from "./components/SobreMi/SobreMi";
@@ -87,20 +87,22 @@ function App() {
               </div>
             </nav>
           </header>
-          <Switch>
-            <Route path="/sobre-mi">
-              <SobreMi />
-            </Route>
-            <Route path="/mis-proyectos">
-              <MisProyectos />
-            </Route>
-            <Route path="/contactame">
-              <Contactame />
-            </Route>
-            <Route path="/">
-              <Inicio />
-            </Route>
-          </Switch>
+          <ParallaxProvider>
+            <Switch>
+              <Route path="/sobre-mi">
+                <SobreMi />
+              </Route>
+              <Route path="/mis-proyectos">
+                <MisProyectos />
+              </Route>
+              <Route path="/contactame">
+                <Contactame />
+              </Route>
+              <Route path="/">
+                <Inicio />
+              </Route>
+            </Switch>
+          </ParallaxProvider>
         </Router>
       </>
     );
@@ -153,20 +155,22 @@ function App() {
           </nav>
         </header>
 
-        <Switch>
-          <Route path="/sobre-mi">
-            <SobreMi />
-          </Route>
-          <Route path="/mis-proyectos">
-            <MisProyectos />
-          </Route>
-          <Route path="/contactame">
-            <Contactame />
-          </Route>
-          <Route path="/">
-            <Inicio />
-          </Route>
-        </Switch>
+        <ParallaxProvider>
+          <Switch>
+            <Route path="/sobre-mi">
+              <SobreMi />
+            </Route>
+            <Route path="/mis-proyectos">
+              <MisProyectos />
+            </Route>
+            <Route path="/contactame">
+              <Contactame />
+            </Route>
+            <Route path="/">
+              <Inicio />
+            </Route>
+          </Switch>
+        </ParallaxProvider>
       </Router>
     );
   }

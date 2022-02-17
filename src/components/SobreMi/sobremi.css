@@ -40,7 +40,6 @@ h1.quien-soy-txt {
   padding: 20px 10px;
   width: 60%;
   margin-bottom: 80px;
-  border: 1px solid #000;
   align-self: flex-start;
 }
 
@@ -51,17 +50,16 @@ h1.quien-soy-txt {
   font-weight: 200;
 }
 .cards .card-sobre-mi p a {
-  color: rgba(41, 41, 41, 0.747);
+  color: rgba(255, 255, 255, 0.644);
   transition: all linear 0.3s;
 }
 .cards .card-sobre-mi p a:hover {
   font-size: 20px;
-  color: rgba(41, 41, 41, 0.938);
+  color: rgba(255, 255, 255, 0.836);
 }
 
 .card-skills {
   background-color: rgba(0, 0, 0, 0.281);
-  border: 3px solid #fff;
   padding: 20px;
   width: 55%;
   align-self: flex-end;

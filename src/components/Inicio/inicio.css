@@ -1,5 +1,5 @@
 .inicio {
-  background-image: url("https://res.cloudinary.com/dp9zv16le/image/upload/v1642290205/portafolio-web/background_nwuawq.jpg");
+  background-image: url("https://res.cloudinary.com/dp9zv16le/image/upload/v1645088709/portafolio-web/background3_hwwah9.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -56,18 +56,12 @@
 /* SECCION PROYECTOS */
 .seccion-some-projects {
   padding: 50px;
-  background: #23074d; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #25022e,
-    #23074d
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #25022e,
-    #23074d
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgba(36, 13, 53, 0.733);
+  /*background: #23074d;
+  background: -webkit-linear-gradient(to right, #25022e, #23074d);
+  background: linear-gradient(to right, #25022e, #23074d);*/
 }
+
 .seccion-some-projects .contenedor-projects {
 }
 .seccion-some-projects .contenedor-projects h1 {
