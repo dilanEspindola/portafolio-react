@@ -17,10 +17,10 @@
   },
   {
     "id": 3,
-    "name": "pagina de tareas",
-    "image":"https://res.cloudinary.com/dp9zv16le/image/upload/v1643077446/portafolio-web/Captura_de_pantalla_846_zzkukt.png",
-    "description": "Este proyecto fue hecho con html, css y javascript, y es basicamente una pagina de tareas en donde agregas un titulo y una descripción",
-    "link": "https://kind-kalam-85786c.netlify.app/",
-    "githubLink": "https://github.com/dilanEspindola/app-tasksjs"
+    "name": "aplicacion de contactos",
+    "image":"https://res.cloudinary.com/dp9zv16le/image/upload/v1646005391/portafolio-web/Captura_de_pantalla_942_fd0fni.png",
+    "description": "Este proyecto consiste en una aplicacion de contactos en donde cada usuario puede tener su propia cuenta, puede crear, editar o eliminar un contacto, ademas cuenta con metodos de autenticacion de usuario. Es una aplicacion que esta hecha unicamente usando nodeJs y como motor de plantilla Handlebars",
+    "link": "https://github.com/dilanEspindola/contact-app",
+    "githubLink": "https://github.com/dilanEspindola/contact-app"
   }
 ]
