@@ -17,10 +17,18 @@
   },
   {
     "id": 3,
-    "name": "aplicacion de contactos",
-    "image":"https://res.cloudinary.com/dp9zv16le/image/upload/v1646005391/portafolio-web/Captura_de_pantalla_942_fd0fni.png",
-    "description": "Este proyecto consiste en una aplicacion de contactos en donde cada usuario puede tener su propia cuenta, puede crear, editar o eliminar un contacto, ademas cuenta con metodos de autenticacion de usuario. Es una aplicacion que esta hecha unicamente usando nodeJs y como motor de plantilla Handlebars",
-    "link": "https://github.com/dilanEspindola/contact-app",
-    "githubLink": "https://github.com/dilanEspindola/contact-app"
+    "name": "Block Master",
+    "image":"https://res.cloudinary.com/dp9zv16le/image/upload/v1652743095/sprint-3/Thumbnail-blockmaster_uiyqim.jpg",
+    "description": "Este proyecto consiste en una aplicacion web de peliculas, en donde puedes crear tu cuenta o autenticarte con google o facebook y ver el trailer de las peliculas que estan disponibles. Este proyecto fue hecho con ReactJs, Firebase, TailwindCss y Redux",
+    "link": "http://movies-webapp-sepia.vercel.app/",
+    "githubLink": "https://github.com/dilanEspindola/movies-webapp"
+  },
+  {
+    "id": 4,
+    "name": "Guappjolotas",
+    "image":"https://res.cloudinary.com/dp9zv16le/image/upload/v1654408687/b5312658-2f85-4bfc-b074-f1c646ebcd62_id1xco.png",
+    "description": "Este proyecto consiste en una aplicacion web de guajolotas, puedes elegir tu guajolota, bebida o tamal favorito, añadirlos al carrito y hacer el pago. Esta aplicacion está hecha con NodeJs, MongoDB, ReactJs y Stripe para el modo de pago",
+    "link": "https://guapjolotas-v1-1.vercel.app/",
+    "githubLink": "https://github.com/dilanEspindola/guapjolotas-V1.1"
   }
 ]

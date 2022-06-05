@@ -7,7 +7,7 @@ const MostrarProyectos = (props) => {
     <>
       {proyectos.map((p) => (
         <div className="project" key={p.id}>
-          <img src={p.image} alt="" />
+          <img src={p.image} alt="" style={{ maxHeight: "230px" }} />
           <p className="titulo">{p.name}</p>
           <div className="padding">
             <div className="content-txt">

@@ -66,7 +66,7 @@ function App() {
             <nav>
               <div className="container-titulo-header">
                 <a href="/" className="titulo-header">
-                  portafolio web
+                  Dilan Espindola
                 </a>
               </div>
               <div className="container-nav-header">
@@ -113,7 +113,7 @@ function App() {
           <nav>
             <div className="container-titulo-header">
               <Link to="/" className="titulo-header">
-                portafolio web
+                Dilan Espindola
               </Link>
             </div>
             <div className="container-nav-header">
