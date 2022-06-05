@@ -30,7 +30,7 @@ function Contactame() {
 
   const descargar = () => {
     window.open(
-      "https://drive.google.com/file/d/1B9YTc16MSWTUkUrqqpToGE-ztFJY4oIO/view"
+      "https://drive.google.com/file/d/12uXH02I7DiVnyAyKSB8ZJvGvcbIILF7y/view?usp=sharing"
     );
   };
 
@@ -83,7 +83,6 @@ function Contactame() {
 
         <div className="contenedor-descarga">
           <button className="btn-descargar" type="submit" onClick={descargar}>
-            <i className="fa-download"></i>
             Descargar CV
           </button>
         </div>
@@ -105,7 +104,6 @@ function Contactame() {
               required
             />
             <textarea
-              name=""
               id=""
               cols="30"
               rows="10"
